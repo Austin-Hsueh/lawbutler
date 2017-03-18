@@ -94,6 +94,39 @@
        End Marketing Tools
     ============================== -->
 
+    <!-- =========================
+        START google analytic 事件追蹤 
+    ============================== -->
+    
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('a[href="../Price/price.html"]').on('click',function(){
+            ga('send','event','lawbutler','click','into-price-page');
+        });
+
+        $('#cta1-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','banner_right_button_to_price_page');
+        });
+
+        $('#cta2-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','header_section_button_to_price_page');
+        });
+
+        $('#cta3-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','5th_section_button_to_price_page');
+        });
+
+
+    });
+    
+
+    </script>
+
+    <!-- =========================
+        END google analytic 事件追蹤 
+    ============================== -->
 </head>
 
 <body>
@@ -705,31 +738,7 @@
     </script>
 
     <!--End of Tawk.to Script-->
-    <!-- =========================
-        START google analytic 事件追蹤 
-    ============================== -->
-    
-    <script type="text/javascript">
-        $('a[href="../Price/price.html"]').on('click',function(){
-            ga('send','event','lawbutler','click','into-price-page');
-        });
 
-        $('#cta1-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','banner_right_button_to_price_page');
-        });
-
-        $('#cta2-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','header_section_button_to_price_page');
-        });
-
-        $('#cta3-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','5th_section_button_to_price_page');
-        }); 
-    </script>
-
-    <!-- =========================
-        END google analytic 事件追蹤 
-    ============================== -->
 
 
 </body>
