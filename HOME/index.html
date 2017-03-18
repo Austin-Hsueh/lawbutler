@@ -47,6 +47,18 @@
     <![endif]-->
 
     <!-- =========================
+        SCRIPTS 
+    ============================== -->
+    <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
+    <script src="assets/js/plugins/modernizr.custom.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- =========================
        Marketing Tools
     ============================== -->
     <script>
@@ -555,6 +567,14 @@
                                     <a href="mailto:lawbutlertw@gmail.com">lawbutlertw@gmail.com</a>
                                 </div>
                             </div>
+                            <div class="contact-item">
+                                <div class ="contact-icon">
+                                    <i class="icon icon_chat"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <a href="https://line.me/R/ti/p/%40ymu0705d"><img width="190px" height="65px" border="0" alt="加入好友" src="assets/images/LINE.png"></a>
+                                </div>
+                            </div>
                             <!--<div class="contact-item">
                                 <div class="contact-icon">
                                     <i class="icon icon_pin"></i>
@@ -669,20 +689,8 @@
         </div>
     </div><!-- /.modal -->
 
-
-    <!-- =========================
-        SCRIPTS 
-    ============================== -->
-    <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
-    <script src="assets/js/plugins/modernizr.custom.min.js"></script>
-    <script src="assets/js/plugins/plugins.min.js"></script>
-    <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
-    <!-- Custom Script -->
-    <script src="assets/js/custom.js"></script>
-
     <!--Start of Tawk.to Script-->
+
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -694,36 +702,38 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
+
     <!--End of Tawk.to Script-->
+
     <!-- =========================
         START google analytic 事件追蹤 
     ============================== -->
     
     <script type="text/javascript">
 
-    jQuery(document).ready(function(){
+    $(document).ready(function(){
 
-        $('a[href$="../Price/price.html"]').on('click',function(){
+        $('a[href="../Price/price.html"]').on('click',function(){
             ga('send','event','lawbutler','click','into-price-page');
         });
 
-        $('#cta1-to-price-page').on('click', function(){
+        $('#cta1-to-price-page').on('click',function(){
             ga('send','event','lawbutler','click','banner_right_button_to_price_page');
         });
 
-        $('#cta2-to-price-page').on('click', function(){
+        $('#cta2-to-price-page').on('click',function(){
             ga('send','event','lawbutler','click','header_section_button_to_price_page');
         });
 
-        $('#cta3-to-price-page').on('click', function(){
+        $('#cta3-to-price-page').on('click',function(){
             ga('send','event','lawbutler','click','5th_section_button_to_price_page');
         });
 
-        $('#tawkchat-minified-wrapper').on('click', function(){
+        $('#tawkchat-minified-wrapper').on('click',function(){
             ga('send','event','lawbutler','click','click_tawchat');
         });
 
-        $('#mc-embedded-subscribe'),on('click', function(){
+        $('#mc-embedded-subscribe').on('click',function(){
             ga('send','event','lawbutler','click','Home_page_feeback_text');
         });
     });
