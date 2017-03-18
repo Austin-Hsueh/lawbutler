@@ -1677,6 +1677,7 @@ p {
 .contact-content {
     display: inline-block;
     line-height: 21px;
+    width: 185px;
 }
 
 .contact-content a {
