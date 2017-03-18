@@ -673,34 +673,37 @@
     ============================== -->
     
     <script type="text/javascript">
-    // 目標1 click any button to price page
+    jQuery(document).ready(function(){
+        // 目標1 click any button to price page
         jQuery('a[href$="../Price/price.html"]').on('click',function(){
             ga('send','event','lawbutler','click','into-price-page');
         });
 
-    // 目標2 click banner button(right head) to price page
+        // 目標2 click banner button(right head) to price page
         jQuery('#cta1-to-price-page').on('click',function(){
             ga('send','event','lawbutler','click','banner_right_button_to_price_page');
         });
 
-    // 目標3 click header section button to price page
+        // 目標3 click header section button to price page
         jQuery('#cta2-to-price-page').on('click',function(){
             ga('send','event','lawbutler','click','header_section_button_to_price_page');
         });
 
-    // 目標4 click 5th section button to price page
+        // 目標4 click 5th section button to price page
         jQuery('#cta3-to-price-page').on('click',function(){
             ga('send','event','lawbutler','click','5th_section_button_to_price_page');
         });
-    // 目標5 click tawchat 
+        // 目標5 click tawchat 
         jQuery('#tawkchat-minified-wrapper').on('click',function(){
             ga('send','event','lawbutler','click','click_tawchat');
         });
 
-    // 目標6 click home page footer feedback
+        // 目標6 click home page footer feedback
         jQuery('#mc-embedded-subscribe'),on('click',function(){
             ga('send','event','lawbutler','click','Home_page_feeback_text');
         });
+    });
+    
 
     </script>
 
