@@ -1061,7 +1061,7 @@ margin-left:130px;
     border: none;
     background-color: #FFFFFF;
     font-size: 14px;
-    color: #3e3e3e;
+    color: #ffffff;
 }
 
 .footer .form-control.textarea{
@@ -1089,6 +1089,7 @@ margin-left:130px;
 .contact-content {
     display: inline-block;
     line-height: 21px;
+    width: 185px;
 }
 
 .contact-content a {
