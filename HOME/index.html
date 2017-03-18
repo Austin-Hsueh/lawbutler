@@ -155,7 +155,7 @@
                                         <li><a href="#testimonials" title="" class="scrollto">真實案例</a></li>
                                         <li><a href="#footer" title="" class="scrollto">聯絡資訊</a></li>
                                         <!-- Early Access Modal on click -->
-                                        <li><a class="btn btn-nav btn-signup" id="cta1-to-price-page" href="../Price/price.html" target="_blank">試用你的法律管家</a></li>
+                                        <li><a class="btn btn-nav btn-signup" id="cta1-to-price-page" href="../Price/price.html" target="_blank" onClick="ga('send','event','lawbutler','click','header_section_button_to_price_page');">試用你的法律管家</a></li>
                                     </ul>
                                 </div><!-- /End Navbar-Collapse -->
                             </div><!-- /End Col -->
@@ -509,7 +509,7 @@
                         <div class="row">
                             <!-- Signup Form -->
                             <div class="col-md-12 text-center">
-                                <a class="btn btn-color" id="cta3-to-price-page" href="../Price/price.html">立即適用，獲得你的專屬法律管家</a>
+                                <a class="btn btn-color" id="cta3-to-price-page" href="../Price/price.html" onClick="ga('send','event','lawbutler','click','header_section_button_to_price_page');">立即適用，獲得你的專屬法律管家</a>
                             </div>
                            
                         </div><!-- /End Row -->
@@ -702,25 +702,6 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
-    
-    $( document ).ready(function() {
-        jQuery('a[href="../Price/price.html"]').on('click',function(){
-            ga('send','event','lawbutler','click','into-price-page')
-        });
-        jQuery('#cta1-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','banner_right_button_to_price_page')
-        });
-
-        jQuery('#cta2-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','header_section_button_to_price_page')
-        });
-
-        jQuery('#cta3-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','5th_section_button_to_price_page')
-        });  
-    });
-    
-
     </script>
     <!--End of Tawk.to Script-->
 
