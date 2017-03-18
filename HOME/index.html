@@ -62,6 +62,7 @@
     ga('create', 'UA-93760365-1', 'auto');
     ga('send', 'pageview');
 
+
     <!--                                 -->
     <!-- Hotjar tracking code            -->
     <!--                                 -->
@@ -140,7 +141,7 @@
                                         <li><a href="#testimonials" title="" class="scrollto">真實案例</a></li>
                                         <li><a href="#footer" title="" class="scrollto">聯絡資訊</a></li>
                                         <!-- Early Access Modal on click -->
-                                        <li><a class="btn btn-nav btn-signup" href="../Price/price.html" target="_blank">試用你的法律管家</a></li>
+                                        <li><a class="btn btn-nav btn-signup" id="cta1-to-price-page" href="../Price/price.html" target="_blank">試用你的法律管家</a></li>
                                     </ul>
                                 </div><!-- /End Navbar-Collapse -->
                             </div><!-- /End Col -->
@@ -232,7 +233,7 @@
                                             <div class="col-sm-8 col-sm-offset-2">
                                                 
                                                 
-                                                    <a href="../Price/price.html" class="btn btn-color" target="_blank">快來看現有方案</a>  
+                                                    <a href="../Price/price.html" class="btn btn-color" id="cta2-to-price-page" target="_blank">快來看現有方案</a>  
                                             </div>
                                         </div>
                                     </form>
@@ -494,7 +495,7 @@
                         <div class="row">
                             <!-- Signup Form -->
                             <div class="col-md-12 text-center">
-                                <a class="btn btn-color" href="../Price/price.html">立即適用，獲得你的專屬法律管家</a>
+                                <a class="btn btn-color" id="cta3-to-price-page" href="../Price/price.html">立即適用，獲得你的專屬法律管家</a>
                             </div>
                            
                         </div><!-- /End Row -->
@@ -667,6 +668,45 @@
         </div>
     </div><!-- /.modal -->
 
+    <!-- =========================
+        START google analytic 事件追蹤 
+    ============================== -->
+    
+    <script type="text/javascript">
+    // 目標1 click any button to price page
+        jQuery('a[href$="../Price/price.html"]').on('click',function(){
+            ga('send','event','lawbutler','click','into-price-page');
+        });
+
+    // 目標2 click banner button(right head) to price page
+        jQuery('#cta1-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','banner_right_button_to_price_page');
+        });
+
+    // 目標3 click header section button to price page
+        jQuery('#cta2-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','header_section_button_to_price_page');
+        });
+
+    // 目標4 click 5th section button to price page
+        jQuery('#cta3-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','5th_section_button_to_price_page');
+        });
+    // 目標5 click tawchat 
+        jQuery('#tawkchat-minified-wrapper').on('click',function(){
+            ga('send','event','lawbutler','click','click_tawchat');
+        });
+
+    // 目標6 click home page footer feedback
+        jQuery('#mc-embedded-subscribe'),on('click',function(){
+            ga('send','event','lawbutler','click','Home_page_feeback_text');
+        });
+
+    </script>
+
+    <!-- =========================
+        END google analytic 事件追蹤 
+    ============================== -->
 
     <!-- =========================
         SCRIPTS 
