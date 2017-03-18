@@ -55,6 +55,7 @@
     <script src="assets/js/plugins/modernizr.custom.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.slim.min.js" integrity="sha256-qLAv0kBAihcHZLI3fv3WITKeRsUX27hd6upBBa0MSow=" crossorigin="anonymous"></script>
     <!-- Custom Script -->
     <script src="assets/js/custom.js"></script>
 
@@ -94,39 +95,6 @@
        End Marketing Tools
     ============================== -->
 
-    <!-- =========================
-        START google analytic 事件追蹤 
-    ============================== -->
-    
-    <script type="text/javascript">
-
-    $(document).ready(function(){
-        console.log('testttt');
-        $('a[href="../Price/price.html"]').on('click',function(){
-            ga('send','event','lawbutler','click','into-price-page');
-        });
-
-        $('#cta1-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','banner_right_button_to_price_page');
-        });
-
-        $('#cta2-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','header_section_button_to_price_page');
-        });
-
-        $('#cta3-to-price-page').on('click',function(){
-            ga('send','event','lawbutler','click','5th_section_button_to_price_page');
-        });
-
-
-    });
-    
-
-    </script>
-
-    <!-- =========================
-        END google analytic 事件追蹤 
-    ============================== -->
 </head>
 
 <body>
@@ -738,7 +706,31 @@
     </script>
 
     <!--End of Tawk.to Script-->
+    <!-- =========================
+        START google analytic 事件追蹤 
+    ============================== -->
+    
+    <script type="text/javascript">
+        $('a[href="../Price/price.html"]').on('click',function(){
+            ga('send','event','lawbutler','click','into-price-page');
+        });
 
+        $('#cta1-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','banner_right_button_to_price_page');
+        });
+
+        $('#cta2-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','header_section_button_to_price_page');
+        });
+
+        $('#cta3-to-price-page').on('click',function(){
+            ga('send','event','lawbutler','click','5th_section_button_to_price_page');
+        }); 
+    </script>
+
+    <!-- =========================
+        END google analytic 事件追蹤 
+    ============================== -->
 
 
 </body>
