@@ -81,8 +81,10 @@ $(window).scroll(function(){
     var b = $(window).scrollTop();
     if( b > 60 ){
         $(".navbar").addClass("is-scrolling");
+        $(".logotop").addClass("logosmall");
     } else {
         $(".navbar").removeClass("is-scrolling");
+        $(".logotop").removeClass("logosmall");
     }
 });
 
