@@ -365,7 +365,7 @@
              PRICING SECTION
         ============================== -->
         <section class="pricing white-bg" id="pricing">
-            <div class="container">
+            <div class="container" style="text-align: center;">
                 <div class="wrapper-lg">
                     <div class="row">
                         <div class="col-xs-12">
@@ -447,14 +447,13 @@
                         </div>
                     </div><!-- /End Row Pricing Tab -->
                 </div><!-- /End Wrapper -->
+                <div class="btn btn-color scrollto" id="openortherprice"><i class="icon arrow_carrot-2dwnn_alt"></i>你需要加值嗎？</div>
             </div><!-- /End Container -->
-            <div class="arrow arrow-1"></div>
-            <div class="arrow arrow-2"></div>
         </section>
         <!-- =============================
              /END PRICING SECTION 
         ============================== -->
-
+        
         <!-- =================================
              加值section
         ====================================== -->
@@ -650,6 +649,24 @@
 
     <!-- Custom Script -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- =============================
+             jQuery點擊展開加值section
+        ============================== -->
+    <script type="text/javascript">
+        $("#openortherprice").click(function(){
+                $("#about").show();
+                $("#openortherprice").remove();
+                });
+
+    </script>
+        
+
+
+        <!-- =============================
+             END jQuery點擊展開加值section
+        ============================== -->
+
     
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
