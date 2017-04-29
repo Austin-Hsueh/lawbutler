@@ -319,17 +319,18 @@
                             <!--Modal footer content-->
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox">我同意上述服務條款
+                                    <input class="agreeservice" type="checkbox">我同意上述服務條款
                                 </label>
                             </div>
                             <div class="modal-footer" style="text-align: center;">
-                                <div class="privision-button clear button btn btn-color" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" aria-hidden="true" onclick="closeprivisionModal();">點我進入付款流程
+                                <div class="privision-button clear button btn btn-color gotopayment nonecheck" data-toggle="modal" data-target=" " data-dismiss="modal" aria-hidden="true" onclick="closeprivisionModal();">點我進入付款流程
                                 </div>
                             </div>                             
                         </div>
                     </div>
                 </div><!-- 服務條款結束-->
-
+<!--                 #loginModal
+ -->
                 
                 <!-- =========================================
                      第一個 Section
@@ -345,7 +346,7 @@
                                 
                                 <!-- Learn More Buttons -->
                                 <div class="btn-box">
-                                    <a href="#about" class="btn btn-ghost scrollto">方案特色</a>
+                                    <a href="#vediomeeting" class="btn btn-ghost scrollto">諮詢使用說明</a>
                                     <a href="#pricing" class="btn btn-color scrollto"><i class="icon arrow_carrot-2dwnn_alt"></i>方案價目表</a>
                                 </div>
 
@@ -448,7 +449,7 @@
                         </div>
                     </div><!-- /End Row Pricing Tab -->
                 </div><!-- /End Wrapper -->
-                <div class="btn btn-color scrollto" id="openortherprice"><i class="icon arrow_carrot-2dwnn_alt"></i>你需要加值嗎？</div>
+                <div class="btn btn-color scrollto" id="openortherprice" style="margin-bottom: 20px;">你需要加值嗎？&nbsp;&nbsp;<i class="icon arrow_carrot-2dwnn_alt"></i></div>
             </div><!-- /End Container -->
         </section>
         <!-- =============================
@@ -461,37 +462,37 @@
         <section class="intro-features white-bg" id="about" style="display: none;">
             <div class="container">
                 <!-- Padding -->
-                <div class="wrapper-lg">
+                <div class="wrapper-lg" style="padding-top: 0px !important;">
                     <div class="row">
                         <!-- Section Header Title -->
                         <div class="col-xs-12">
-                            <h2>擁有自己的專屬律師，將成為現實</h2>
-                            <p class="large">只要 $ 999，立即享受深度諮詢</p>
+                            <h2>超值自由配</h2>
+                            <p class="large">購買任一方案，即可加購超值自由配</p>
                         </div>
                     </div>
                     <!-- Three Main Features with Icons -->
                     <div class="row">
-                        <div class="col-sm-4 intro-content">
+                        <div class="col-sm-6 intro-content">
                             <div class="icon-lg">
-                                <i class="icon icon-mobile"></i>
+                                <i class="icon icon-chat"></i>
                             </div>
-                            <h4>專屬律師</h4>
-                            <p>遇到法律糾紛不再求助無門，法律管家讓你擁有自己的專屬律師，保障你的生活</p>
+                            <h4>諮詢加值</h4>
+                            <p>一次20分鐘：$400<br>(限加值一次，可選文字、語音或視訊)</p>
                         </div>
-                        <div class="col-sm-4 intro-content">
+                        <div class="col-sm-6 intro-content">
                             <div class="icon-lg">
-                                <i class="icon icon-browser"></i>
+                                <i class="icon icon-speedometer"></i>
                             </div>
-                            <h4>價格親民</h4>
-                            <p>針對你的需求，設計各種方案，輕鬆保障生活無負擔</p>  
+                            <h4>急件加值</h4>
+                            <p>24小時內立即回覆：$999<br>(替你快速解決問題)</p>  
                         </div>
-                        <div class="col-sm-4 intro-content">
+                        <!-- <div class="col-sm-4 intro-content">
                             <div class="icon-lg">
                                 <i class="icon icon-documents"></i>
                             </div>
                             <h4>試用體驗</h4>
                             <p>沒看過這種服務？趕快來試用，體驗專屬律師的尊榮感</p>
-                        </div>
+                        </div> -->
                     </div><!-- /End Row -->
                 </div><!-- /End Wrapper -->
             </div><!-- /End Container -->
@@ -544,7 +545,7 @@
         <!-- ==================================================
              SECTION 2 COLS - IMAGE RIGHT AND TEXT WITH CALL TO ACTION
         ======================================================= -->
-        <section class="img-with-action light-bg">
+        <section class="img-with-action light-bg" id="vediomeeting">
             <div class="container wrapper-lg">
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
@@ -627,7 +628,15 @@
                                     <i class="icon icon_chat"></i>
                                 </div>
                                 <div class="contact-content">
-                                    <a href="https://line.me/R/ti/p/%40ymu0705d"><img width="150px" height="45px" border="0" alt="加入好友" src="../HOME/assets/images/LINE.png"></a>
+                                    <a href="https://line.me/R/ti/p/%40ymu0705d" target="_blank"><img width="100px" height="30px" border="0" alt="加入好友" src="../HOME/assets/images/LINE.png"></a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class ="contact-icon">
+                                    <i class="icon icon_chat"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <a href="https://zoomnow.net/zntw_zoom_download.php?showType=ALL" target="_blank"><img width="100px" height="px" border="0" alt="加入好友" src="../HOME/assets/images/zoom.png"></a>
                                 </div>
                             </div>
                         </div>
@@ -657,10 +666,17 @@
         ============================== -->
     <script type="text/javascript">
         $("#openortherprice").click(function(){
-                $("#about").show();
                 $("#openortherprice").remove();
+                $("#about").show();
                 });
-
+        
+        $(".agreeservice").click(function() {
+            $(".agreeservice").addClass("checked");
+                if($(this).hasClass("checked")){
+                    $(".gotopayment").removeClass("nonecheck");
+                    $(".gotopayment").attr("data-target","#loginModal");        
+                }
+        });
     </script>
         
 
