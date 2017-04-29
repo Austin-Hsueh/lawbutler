@@ -12,6 +12,12 @@ a, .text-color {
 /*------------------------------------------*/
 /*	 Red Buttons 
 /*------------------------------------------*/
+
+.nonecheck{
+    background: #d0d0d0 !important;
+    border-color: #d0d0d0 !important;
+}
+
 .btn-color-ghost {
 	background: transparent;
 	color: #c0392b;
