@@ -165,7 +165,7 @@ new WOW().init();
 
 
 /* =================================
-    VIDEO BACKGROUND            
+    VIDEO BACKGROUND 目前無使用            
 =================================== */
 $("#top").vide("assets/images/video/easytobuy", {
     posterType: "jpg"
@@ -222,15 +222,6 @@ $("#owl-carousel-shots-phone").owlCarousel({
     VENOBOX - LIGHTBOX FOR GALLERY AND VIDEOS
 ============================================= */
 $('.venobox').venobox();
-
-/* ===================================================================
-    TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
-==================================================================== */
-$('.tweet').twittie({
-    apiPath : 'assets/js/plugins/twitter/api/tweet.php',
-    count: 2,
-    template: '{{tweet}} - <span class="date">{{date}}</span>'
-});
 
 
 /* =================================
