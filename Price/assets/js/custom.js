@@ -600,7 +600,7 @@ if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userA
 else {
 
     console.log("pc");      // 目前是用電腦瀏覽
-}
+};
 
 
 
