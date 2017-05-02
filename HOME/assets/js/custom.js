@@ -343,3 +343,29 @@ $("#count-btn-show-3").click(function(){
     $("#count-btn-show-3").hide();
 });
 
+
+
+
+if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) {
+    $("h1.text-white.hr-top-text").html("設計你的法律服務");
+    $("div.hero-section p.text-white").html("全新專案，貼心計畫");
+    $("h2.se2-mobile").html("法律服務觸手可及");
+    $("p.se2-mobile.large").html("專業與創新<br>每個人都可擁有專屬的法律管家");
+    $("p.se2-mobile.large").css("line-height","25px");
+    $("p.se2-1-mobile").html("一對一視訊諮詢，全方位深入解答");
+    $("p.se2-2-mobile").html("購買專屬方案，臨時困難，彈性使用");
+    $("p.se2-3-mobile").html("事先預防保障，整套規劃，折價享有");
+    $("p.se2-4-mobile").html("多位專業律師，一說就懂的法律知識");
+    $("p.se2-1-mobile .se2-2-mobile .se2-3-mobile,p.se5-mobile,p.se6-mobile").css("font-size","90%");
+    $(".icon-se2-mobile").css({"height":"90px","margin-right":"15px"});
+    $("h2.se3-mobile").html("法律的創新時代");
+    $("h2.se7-mobile").html("限量方案<br>＄999搶購中");
+    $(".header").css("background-size","1650px");
+
+
+
+}
+else {
+    console.log('pc');
+};
+
