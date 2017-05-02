@@ -114,17 +114,6 @@ new WOW().init();
 ============================================= */
 $('.venobox').venobox();
 
-
-/* ===================================================================
-    TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
-==================================================================== */
-$('.tweet').twittie({
-    apiPath : 'assets/js/plugins/twitter/api/tweet.php',
-    count: 2,
-    template: '{{tweet}} - <span class="date">{{date}}</span>'
-});
-
-
 /* =================================
    SCROLL TO                  
 =================================== */
@@ -357,15 +346,13 @@ if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userA
     $("p.se2-3-mobile").html("事先預防保障，整套規劃，折價享有");
     $("p.se2-4-mobile").html("多位專業律師，一說就懂的法律知識");
     $("p.se2-1-mobile .se2-2-mobile .se2-3-mobile,p.se5-mobile,p.se6-mobile").css("font-size","90%");
-    $(".icon-se2-mobile").css({"height":"90px","margin-right":"15px"});
+    $(".icon-se2-mobile").css("height","90px");
+    $(".icon-sm").css("font-size","37px");
     $("h2.se3-mobile").html("法律的創新時代");
     $("h2.se7-mobile").html("限量方案<br>＄999搶購中");
     $(".header").css("background-size","1650px");
 
 
 
-}
-else {
-    console.log('pc');
 };
 

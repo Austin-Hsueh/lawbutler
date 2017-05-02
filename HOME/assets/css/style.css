@@ -531,10 +531,10 @@ p {
 /*   Header Background Parallax Settings
 /*------------------------------------------*/
 .header{
-    background:url("../images/legal-compliance.jpg") no-repeat center top fixed;
-    -webkit-background-size: cover;
+    background:url("../images/legal-compliance.png") scroll;
+    -webkit-background-size:cover;
     -moz-background-size:cover;
-    background-size:cover; 
+    background-size:cover;  
 
 
 }
@@ -607,11 +607,6 @@ p {
 }
 
 
-
-
-
-
-}
 
 .navbar-nav>li>a:hover, .navbar-nav>li>a:focus, .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus{
     color: #ffffff;
@@ -1135,33 +1130,6 @@ margin-left:130px;
     font-size:13px;
     line-height: 16px;
     text-align: center;
-}
-
-/* Twitter Feed by Tweetie */
-.tweet {
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.tweet ul{
-    list-style-type: circle;
-}
-
-.tweet li {
-    margin-top: 15px;
-}
-
-.tweet li img{
-    display: none;
-}
-
-.tweet li span{
-    font-style: italic;
-    font-size: 15px;
-}
-
-.twitter-box {
-    padding-top: 20px;
 }
 
 /*--------------------*/

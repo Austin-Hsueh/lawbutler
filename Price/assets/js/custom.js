@@ -591,10 +591,13 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 });
 
 if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) {
-    console.log('mobile');
-}
-else {
-    console.log('pc');
+    $("p.se1-mobile").html("輕鬆擁有法律管家&emsp;<br>全方位保護自己的權益");
+    $("h2.se2-mobile").html("今天就擁有自己的法律管家");
+    $("h2.se2-mobile").css("text-align","center");
+    $("p.large.se2-mobile").css("text-align","center");
+    $("div.container.se3-mobile").css("text-align","center !important");
+    $("footer.footer.dark-bg").css("text-align","center !important");
+
 };
 
 
