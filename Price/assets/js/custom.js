@@ -590,17 +590,6 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 });
 
-/* ===========================================================
-   偵測手機裝置 
-============================================================== */
-
-if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) {
-
-}
-else {
-
-    console.log("pc");      // 目前是用電腦瀏覽
-};
 
 
 
