@@ -601,6 +601,6 @@ if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userA
 };
 
 $(document).ready(function(){
-   $(input:checkbox).prop("checked",false);
+   $("input:checkbox").prop("checked",false);
 };
 
