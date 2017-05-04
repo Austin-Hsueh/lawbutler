@@ -590,6 +590,68 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 });
 
+//  展開加值section & 各方案立即付款
+
+$(document).ready(function(){
+   $("input:checkbox").prop("checked",false);
+};
+
+$("#openortherprice").click(function(){
+       $("#openortherprice").remove();
+       $("#about").show();
+       });
+$("#999project").click(function(){
+   $(".agreeservice").click(function(){
+       if($('input:checkbox[name=agreeservice]').prop('checked')){
+           $(".gotopayment").removeClass("nonecheck");
+           $(".gotopayment").attr("data-target","#loginModal");
+       }else{
+           $(".gotopayment").addClass("nonecheck");
+           $(".gotopayment").attr("data-target"," ");
+       }
+   })
+});
+
+$("#4999project").click(function(){
+   $(".agreeservice").click(function(){
+       if($('input:checkbox[name=agreeservice]').prop('checked')){
+           $(".gotopayment").removeClass("nonecheck");
+           $(".gotopayment").attr("data-target","#goldenModal");
+       }else{
+           $(".gotopayment").addClass("nonecheck");
+           $(".gotopayment").attr("data-target"," ");
+       }
+   })
+});
+
+$("#8999project").click(function(){
+   $(".agreeservice").click(function(){
+       if($('input:checkbox[name=agreeservice]').prop('checked')){
+           $(".gotopayment").removeClass("nonecheck");
+           $(".gotopayment").attr("data-target","#whitegoldenModal");
+       }else{
+           $(".gotopayment").addClass("nonecheck");
+           $(".gotopayment").attr("data-target"," ");
+       }
+   })
+});
+
+$("#12999project").click(function(){
+   $(".agreeservice").click(function(){
+       if($("input:checkbox[name=agreeservice]").prop("checked")){
+           $(".gotopayment").removeClass("nonecheck");
+           $(".gotopayment").attr("data-target","#diamondModal");
+       }else{
+           $(".gotopayment").addClass("nonecheck");
+           $(".gotopayment").attr("data-target"," ");
+       }
+   })
+});
+
+// END jQuery點擊展開加值section
+
+// START mobile style
+
 if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) {
     $("p.se1-mobile").html("輕鬆擁有法律管家&emsp;<br>全方位保護自己的權益");
     $("h2.se2-mobile").html("從今天起擁有<br>自己的法律管家");
@@ -600,7 +662,5 @@ if (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userA
 
 };
 
-$(document).ready(function(){
-   $("input:checkbox").prop("checked",false);
-};
+// END mobile style
 
