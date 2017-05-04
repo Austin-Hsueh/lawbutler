@@ -437,7 +437,7 @@ p {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     margin-bottom: 5px;
     border-radius: 5px;
     display: inline-block;
@@ -661,6 +661,7 @@ p {
 
 .hero-section .btn{
     margin-bottom: 0;
+    margin-right: 15px;
 } 
 
 /*------------------------------------------*/
