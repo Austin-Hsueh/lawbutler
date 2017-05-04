@@ -772,6 +772,7 @@
                     $(".gotopayment").removeClass("nonecheck");
                     $(".gotopayment").attr("data-target","#loginModal");
                 }else{
+                    $("input:checkbox[name=agreeservice]").prop("checked", false);
                     $(".gotopayment").addClass("nonecheck");
                     $(".gotopayment").attr("data-target"," ");
                 }
@@ -784,6 +785,7 @@
                     $(".gotopayment").removeClass("nonecheck");
                     $(".gotopayment").attr("data-target","#goldenModal");
                 }else{
+                    $("input:checkbox[name=agreeservice]").prop("checked", false);
                     $(".gotopayment").addClass("nonecheck");
                     $(".gotopayment").attr("data-target"," ");
                 }
@@ -796,6 +798,7 @@
                     $(".gotopayment").removeClass("nonecheck");
                     $(".gotopayment").attr("data-target","#whitegoldenModal");
                 }else{
+                    $("input:checkbox[name=agreeservice]").prop("checked", false);
                     $(".gotopayment").addClass("nonecheck");
                     $(".gotopayment").attr("data-target"," ");
                 }
@@ -804,10 +807,11 @@
 
         $("#12999project").click(function(){
             $(".agreeservice").click(function(){
-                if($('input:checkbox[name=agreeservice]').prop('checked')){
+                if($("input:checkbox[name=agreeservice]").prop("checked")){
                     $(".gotopayment").removeClass("nonecheck");
                     $(".gotopayment").attr("data-target","#diamondModal");
                 }else{
+                    $("input:checkbox[name=agreeservice]").prop("checked", false);
                     $(".gotopayment").addClass("nonecheck");
                     $(".gotopayment").attr("data-target"," ");
                 }
